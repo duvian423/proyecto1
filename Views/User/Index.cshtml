@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-warning"><a  asp-controller="User" asp-action="Creacion" style="color: white;">Crear nuevo usuario</a></button>
+    </div>    
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+    <th scope="col">Correo</th>
+    <th scope="col">Genero</th>
+    <th scope="col">Edad</th>
+    <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>Duvian</td>
+    <td>lopez</td>
+    <td>duvian@example.com</td>
+    <td>M</td>
+    <td>32 años</td>
+    <td>
+        <button class="btn btn-danger" ><a asp-controller="User" asp-action="Delete">Eliminar</a></button>
+        <button class="btn btn-warning" ><a asp-controller="User" asp-action="Editar">Editar</a></button>
+        <button class="btn btn-success" ><a asp-controller="User" asp-action="Show">Detalles</a></button>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+

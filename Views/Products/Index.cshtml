@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-warning"><a  asp-controller="Products" asp-action="Creacion" style="color: white;">Crear nuevo producto</a></button>
+    </div>    
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+    <th scope="col">Imagen</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Precio</th>
+    <th scope="col">Cantidad</th>
+    <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td><img src="https://cdn1.totalcommerce.cloud/mercacentro/product-zoom/es/atun-van-camps-aceite-vegetal-160-g-3.webp" alt="" width="20px;" height="20px;"></td>
+    <td>Atun</td>
+    <td>6000</td>
+    <td>5</td>
+    <td>
+        <button class="btn btn-danger" ><a asp-controller="Products" asp-action="Delete">Eliminar</a></button>
+        <button class="btn btn-warning" ><a asp-controller="Products" asp-action="Editar">Editar</a></button>
+        <button class="btn btn-success" ><a asp-controller="Products" asp-action="Show">Detalles</a></button>
+    </td>
+    </tr>
+  </tbody>
+</table>
